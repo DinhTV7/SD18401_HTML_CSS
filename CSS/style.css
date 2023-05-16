@@ -1,0 +1,30 @@
+/* Phương pháp này phù hợp cho việc áp dụng cho
+nhiều thẻ trên nhiều trang khác nhau */
+
+h6 {
+    color: chartreuse;
+    font-size: 30px;
+}
+
+.content {
+    /* Các thuộc tính font chữ */
+    /* Thay đổi font chữ */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Kích thước */
+    font-size: 30px;
+    /* in đậm */
+    font-weight: bold;
+    /* in nghiêng */
+    font-style: italic;
+    /* Viết hoa (nhỏ)*/
+    font-variant: small-caps;
+
+    
+    /* Giãn hàng và ký tự */
+    /* Khoảng cách giữa các chữ */
+    word-spacing: 10px;
+    /* Khoảng cách giữa các chữ cái (1 ký tự) */
+    letter-spacing: 10px;
+    /* Chiều cao của hàng */
+    line-height: 50px;
+}

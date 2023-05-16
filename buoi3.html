@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 3 | Tìm hiểu CSS</title>
+    <!-- Cách: Liên kết ngoài -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <!-- Có 3 cách để đưa CSS vào 1 trang web -->
+    <!-- Cách: CSS nội tuyến  -->
+    <!-- Đặt các thuộc tính CSS trong thuộc tính style của thẻ HTML -->
+    <!-- Phương pháp này phù hợp với các trường hợp:
+        - Chỉ áp dụng css cho 1 thẻ
+        - Chỉnh sửa 1 vài thuộc tính CSS đơn giản
+    -->
+    <h1 style="color: red; font-size: 14px;">Xin chào các bạn</h1>
+    <h1>Xin chào các bạn</h1>
+    <h1>Xin chào các bạn</h1>
+    <h1 class="tieu_de1">Xin chào các bạn</h1>
+    <h2 style="color: #FF00FF;">Xin chào các bạn</h2>
+
+    <h3 id="text_yellow" class="tieu_de1">Xin chào các bạn h3</h3>
+    <h3 class="tieu_de1">Xin chào các bạn h3</h3>
+    <h3 class="tieu_de1">Xin chào các bạn h3</h3>
+    <h4 class="tieu_de1">Xin chào các bạn h4</h4>
+
+    <h5>Xin chào các bạn</h5>
+    <h6>Xin chào các bạn</h6>
+    <p>Xin chào các bạn thẻ p</p>
+    <p class="content">Xin chào các bạn thẻ p</p>
+
+    <!-- Liệt kê thông tin 3 nym 
+        - Tên: mỗi người 1 màu ( pp nội tuyến )
+        - Ngày sinh: tất cả là màu blue 
+            ( mỗi người sử dụng 1 thẻ ngẫu nhiên h1 - h6 )
+        - Quê quán: Tất cả đề là màu tím ( cùng tên thẻ )
+        - Ngày cb chia tay: mỗi ng 1 màu ( id )
+    -->
+    <hr>
+    <h1 style="color: darkgreen;">Tên: Nguyễn Thị A</h1>
+    <h3 class="ngaySinh">Ngày sinh: 16/05/2004</h3>
+    <h4>Quê quán: Nam Định</h4>
+    <h4 id="nguoi_1">Ngày chia tay: 15/05/2023</h4>
+
+    <hr>
+    <h1 style="color: brown;">Tên: Nguyễn Thị B</h1>
+    <h3 class="ngaySinh">Ngày sinh: 16/05/2004</h3>
+    <h4>Quê quán: Nam Định</h4>
+    <h4 id="nguoi_2">Ngày chia tay: 15/05/2023</h4>
+
+    <hr>
+    <h1 style="color: coral;">Tên: Nguyễn Thị C</h1>
+    <h3 class="ngaySinh">Ngày sinh: 16/05/2004</h3>
+    <h4>Quê quán: Nam Định</h4>
+    <h4 id="nguoi_3">Ngày chia tay: 15/05/2023</h4>
+</body>
+<!-- Cách: Nhúng CSS -->
+<!-- Có thể áp dụng cho nhiều thẻ HTML cùng 1 lúc -->
+<!-- Thẻ style dùng để định nghĩa CSS -->
+<style>
+    /* Có 3 cách để chỉnh sửa CSS */
+    /* Cách 1: Sử dụng tên thẻ */
+    /* Cú pháp: tênthẻ {} */
+    h1 {
+        /* Khi viết bằng cách này CSS nội tuyến sẽ ko bị ghi đè */
+        color: yellow;
+    }
+
+    h1 {
+        /* color: blueviolet !important; */
+        /* important có quyền cao nhất, ghi đè tất cả, không nên lạm dụng nó */
+    }
+
+    h4 {
+        color: blueviolet;
+    }
+
+    /* Cách 2: Sử dụng Class */
+    /* Cú pháp: .tenclass {} */
+    .tieu_de1 {
+        color: red;
+    }
+
+    h3 {
+        /* Không chỉnh sửa vì Class có quyền lớn hơn tên thẻ */
+        color: aqua;
+    }
+
+    .ngaySinh {
+        color: blue;
+    }
+
+    /* Cách 3: Sử dụng ID */
+    /* ID chỉ có 1, duy nhất */
+    /* Chỉ chỉnh sửa đc 1 phần tử HTML */
+    /* Cú pháp: #tenID {} */
+    #text_yellow {
+        color: yellow;
+    }
+
+    #nguoi_1 {
+        color: aquamarine;
+    }
+
+    #nguoi_2 {
+        color: gold;
+    }
+
+    #nguoi_3 {
+        color: chocolate;
+    }
+
+    /* Suy ra được phân cấp quyền trong CSS:
+        ID -> Class -> Tên thẻ
+    */
+</style>
+</html>
