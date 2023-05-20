@@ -1,0 +1,66 @@
+/* Thuộc tính văn bản */
+h1 {
+    /* Căn lề */
+    /* Giá trị: left, right, center, justify */
+    text-align: center;
+
+    /* Trang trí */
+    /* Giá trị: line-through (gạch ngang), underline (gach chân), overline (gạch bên trên), none (xóa các thuộc tính) */
+    text-decoration: none;
+
+    /* Tạo bóng */
+    /* text-shadow: x / y / độ nhòe màu / màu sắc */
+    /* y càng cao thì bóng càng xuống dưới */
+    text-shadow: 3px 2px 2px red;
+}
+
+.navbar {
+    text-align: center;
+}
+
+/* Hiệu chỉnh định dạng liên kết */
+/* Tùy chỉnh những thẻ a nào có gắn link (chưa click chuột) */
+a:link {
+    color: red;
+}
+/* Tùy chỉnh những thẻ a chúng ta đã click chuột vào nó */
+a:visited {
+    color: green;
+}
+/* Tùy chỉnh các thẻ a mà chúng ta đang click */
+a:active {
+    color: blueviolet;
+}
+/* Tùy chỉnh các thẻ a mà chúng ta đưa chuột tới */
+a:hover {
+    color: pink;
+    text-decoration: none;
+}
+
+/* ---------------------- */
+/* Css phân vùng */
+/* h2 {
+    color: red;
+} */
+/* Cách 1: Chỉ chọn những thẻ h2 có class là orand_text */
+h2.orand_text {
+    color: orange;
+}
+/* Cách 2: */
+/* Chọn tất cả những thẻ h2 nằm trong vùng chứa của thẻ dic có class là violet_text */
+/* Nhận hết: con, cháu, chắt, ...... */
+.violet_text h2 {
+    color: blueviolet;
+}
+/* Cách 3 */
+/* Chọn tất cả những thẻ h2 nằm trong vùng chứa là con của thẻ div có class là green_text */
+/* Chỉ nhận đến đời con */
+.green_text > h2 {
+    color: green;
+}
+
+/* Gộp CSS */
+/* Sử dụng nhiều thẻ CSS, class, id có chung thuộc tính css */
+h3, h4, p, .text, #id {
+    color: aqua;
+}
