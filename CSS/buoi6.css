@@ -1,0 +1,66 @@
+.box_1 {
+    width: 400px;
+    height: 400px;
+    background-color: brown;
+    border: 5px solid blue;
+
+    /* Padding và margin */
+    /* Cách 1: Tùy chỉnh tất cả các cạnh */
+    padding: 50px;
+
+    /* Tùy chỉnh từng cạnh */
+    padding: 5px 10px 20px 40px;
+    /* padding: <top> <right> <bottom> <left> */
+
+    /* Tùy chỉnh cặp cạnh đối nhau */
+    padding: 10px 30px;
+    /* padding: <top-bottom> <right-left> */
+
+    /* Cách 2: Tùy chỉnh riêng từng cạnh */
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 30px;
+    /* Cấu trúc: padding-tencanh: giá trị */
+
+    /* margin sử dụng tương tự như padding 
+    ( thay tiền tố padding thành margin ) */
+    margin-bottom: 50px;
+}
+
+.box_1 > img {
+    width: 100%;
+    height: 100%;
+}
+
+.box_2 {
+    width: 400px;
+    height: 400px;
+    background-color: brown;
+    background-image: url('../img/avt_github.jpg');
+    background-size: 100% 100%;
+
+    border: 10px double blue;
+    /*  - with: độ dày của border
+        - style: kiểu border 
+            ( solid: nét liền, double: 2 đường song song, 
+            dotted: dấu chấm, dashed: nét đứt ) 
+        - color: màu sắc */
+
+    /* Tùy chỉnh từng cạnh riêng */
+    /* Cấu trúc: border-tencanh: <with> <style> <color> */
+
+    /* Tùy chỉnh giá trị của từng thuộc tính */
+    /* Cấu trúc: border-tencanh-tenthuoctinh: giá trị; */
+    border-top-style: solid;
+
+    /* box-shadow */
+    /* Đổ bóng bên ngoài */
+    /* box-shadow: <x> <y> <độ nhòe> <color> */
+
+    /* Đổ bóng bên trong */
+    /* box-shadow: inset <x> <y> <độ nhòe> <color> */
+}
+/* Tạo 1 thẻ div có class tùy thích */
+/* Bo góc 90px */
+/* Đổ bóng vào bền trong có màu là blue */

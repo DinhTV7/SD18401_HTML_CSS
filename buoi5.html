@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 5 | Tìm hiểu về Box model</title>
+    <link rel="stylesheet" href="./CSS/buoi5.css">
+</head>
+<style>
+    /* Một số thuộc tính của 1 phần tử 
+        - Kích thước: width, height ( không bao gồm border, margin, padding )
+        - Chỉnh nền: background-color, background-image ( Ảnh nền sẽ nằm trên màu nền )
+        - Viền: border: độ rộng / trạng thái / màu sắc
+        - Lề xung quanh: margin (margin nó sẽ bị đề lên nhau và sẽ tính bắt đầu từ boder, luôn luôn là ko màu)
+        - Khoảng đệm xung quang: padding ( màu nền của padding sẽ cùng với màu nền của hình chữ nhật)
+        - Bo viền: border-radius
+        - Bóng: box-shadow
+    */
+    h1 {
+        /* width: 100px; */
+        height: 200px;
+        background-color: aqua;
+    } 
+    .box {
+        width: 300px;
+        height: 300px;
+        background-image: url('/img/avt_github.jpg');
+        background-color: blue;
+        border: 5px solid red;
+        margin: 30px;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 5px 10px 2px gray;
+        background-size: 100% 100%;
+    }
+    .box h2 {
+        border: 2px solid red;
+        margin: 5px;
+        padding: 20px;
+    }
+</style>
+<body>
+    <!-- Tất cả những phần tử trên trang web đều có diện tích chiếm là 1 hình chữ nhật -->
+    <h1>Tìm hiểu về box model</h1>
+    <div class="box">
+        <h2>Tìm hiểu về box model</h2>
+        <h2>Tìm hiểu về box model</h2>
+        <img style="width: 100px;" src="./img/FPT_Polytechnic.png" alt="">
+    </div>
+</body>
+</html>
