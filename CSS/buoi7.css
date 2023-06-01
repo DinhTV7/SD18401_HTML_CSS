@@ -1,0 +1,56 @@
+.box {
+    width: 400px;
+    height: 400px;
+    background-image: url("./img/avt_github.jpg");
+    background-size: 100% 100%;
+
+    /* Border-radius */
+    /* Bo tròn 4 góc 1 lúc */
+    /* border-radius: <top-left> <top-right> <bottom-right> <bottom-left> */
+    border-radius: 90px;
+    border-radius: 10px 20px 40px 80px;
+
+    /* Th1: Nhập 3 giá trị */
+    border-radius: 10px 80px 40px;
+    /* Khi viết như này thì sô đo của <bottom-left> 
+        sẽ bằng góc đối diện là <top-right> */
+
+    /* TH2: Nhập 2 giá trị */
+    border-radius: 10px 80px;
+    /* Khi viết như này thì sô đo của <bottom-right> và <bottom-left> 
+        sẽ bằng góc đối diện lần lượt là <top-left> và <top-right> */
+
+    /* Bo góc từng góc riêng lẻ */
+    /* Cấu trúc: border-tên góc-radius:  */
+    /* 
+        - border-top-left-radius: Bo góc trên bên trái
+        - border-top-right-radius: Bo góc trên bên phải
+        - border-bottom-left-radius: Bo góc dưới bên trái
+        - border-bottom-right-radius: Bo góc dưới bên phải
+    */
+}
+
+.box_image {
+    border: 2px solid red;
+    width: 400px;
+    height: 400px;
+    background-image: url("./img/FPT_Polytechnic.png");
+    /* Kích thước ảnh nền */
+    background-size: 50% 20%;
+    /* Lặp ảnh nền */
+    background-repeat: repeat;
+    /* Lặp trên toàn bộ hàng ngang */
+    background-repeat: repeat-x;
+    /* Lặp trên toàn bộ hàng dọc */
+    background-repeat: repeat-y;
+    /* Hủy lặp lại */
+    background-repeat: no-repeat;
+
+    /* Vị trí ảnh nền */
+    /* Cú pháp: Vị trí / phía */
+    /*  top left, center left, bottom left
+        top center, center, bottom center
+        top right, center right, bottom right
+     */
+    background-position: center center;
+}
