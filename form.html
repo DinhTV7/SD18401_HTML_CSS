@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học về form</title>
+</head>
+<body>
+    <h1>Form nhập thông tin người yêu cũ</h1>
+    <!-- Cách tạo 1 form -->
+    <!-- action: Nơi dữ liệu được gửi tới -->
+    <!-- method: Là phương thức chuyển dữ liệu (get/post) -->
+    <form action="thongtin.html" method="get">
+        <!-- Dùng thẻ input để nhập thông tin người dùng -->
+        <!-- Type cần phải chú ý để đặt cho phù hợp -->
+
+        <!-- Tạo nhãn thẻ -->
+        <label for="">Họ và tên:</label>
+        <!-- Text: nhập dữ liệu ngắn -->
+        <!-- placeholder: Tạo chú thích trong ô nhập -->
+        <!-- required: Bắt buộc nhập thông tin vào ô -->
+        <input type="text" placeholder="Nhập họ và tên" required><br>
+
+        <!-- Nhập số điện thoại phải sử dụng type là text -->
+        <input type="text" placeholder="Nhập số điện thoại" required><br>
+
+        <!-- Nhập email -->
+        <input type="email" placeholder="Nhập email" required><br>
+
+        <!-- Nhập ngày sinh -->
+        <input type="date"><br>
+
+        <!-- Nhập mật khẩu -->
+        <input type="password" placeholder="Nhập mật khẩu" required><br>
+
+        <!-- Nhập nội dung dài -->
+        <!-- cols: chiều rộng, rows: chiều cao -->
+        <textarea name="" id="" cols="30" rows="5" placeholder="Nhập mô tả người yêu cũ"></textarea>
+        <br>
+        <!-- Gửi file -->
+        <input type="file"><br>
+
+        <!-- Radio (chọn 1 đáp án) -->
+        <!-- radio yêu cầu phải trùng tên (name) BẮT BUỘC -->
+        <!-- checked: Chọn trước 1 đáp án mặc định -->
+        <label for="">Giới tính:</label>
+        <input type="radio" name="gioitinh" checked> Nam
+        <input type="radio" name="gioitinh"> Nữ
+        <br>
+
+        <!-- Chọn nhiều đáp án -->
+        <label for="">Sở thích</label>
+        <input type="checkbox"> Đá bóng
+        <input type="checkbox"> Thổi kèn
+        <input type="checkbox"> Nghe nhạc
+        <br>
+
+        <!-- Mục danh sách -->
+        <label for="">Danh sách người yêu cũ:</label>
+        <select name="" id="">
+            <option value="">Đào</option>
+            <option value="">Phương</option>
+            <option value="">Hà</option>
+            <option value="">Trâm Anh</option>
+            <!-- disabled: vô hiệu hóa phần tử -->
+            <!-- selected: Chọn trước 1 đáp án -->
+            <option value="" selected disabled>Chọn người yêu cũ</option>
+        </select>
+
+        <!-- Gửi dữ liệu đi -->
+        <input type="submit" value="Submit">
+        <!-- Xóa hết toàn bộ dữ liệu trong form -->
+        <input type="reset" value="Reset">
+    </form>
+</body>
+<style>
+    /* input {
+        color: red;
+    } */
+
+    /* Tùy chỉnh khi đưa con trỏ chuột vào ô nhập */
+    /* input:focus {
+        color: aqua;
+    } */
+</style>
+</html>
