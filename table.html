@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo bảng</title>
+</head>
+<body>
+    <!-- Dùng thẻ table để tạo bảng -->
+    <!-- border dùng để tạo viền của bảng, số càng to thì viền càng đậm -->
+    <table border="1">
+        <!-- Tạo tên cho bảng -->
+        <caption>Danh sách người yêu cũ</caption>
+        <!-- Dùng thẻ tr để tạo hàng -->
+        <!-- Trong 1 hàng thì có rất nhiều cột được tạo bằng thẻ td -->
+        <!-- Table đc chia thành 3 phần
+            - Phần đầu: (tiêu đề) được đặt bên trong thẻ thead
+        -->
+        <thead class="head_table">
+            <tr>
+                <!-- Với tiêu đề thì chúng ta sử dụng thẻ th -->
+                <th>STT</th>
+                <th>Họ và tên</th>
+                <th>Quê quán</th>
+                <th>Nơi ở</th>
+            </tr>
+        </thead>
+        
+        <!-- Phần thân: (nội dung) được đặt trong thẻ tbody  -->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Nguyễn Thị A</td>
+                <td>Nam Định</td>
+                <td>Hà Nội</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn Văn B</td>
+                <td>Thái Bình</td>
+                <td>Hà Nội</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nguyễn Thị A</td>
+                <td>Nam Định</td>
+                <td>Hà Nội</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn Văn B</td>
+                <td>Thái Bình</td>
+                <td>Hà Nội</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nguyễn Thị A</td>
+                <td>Nam Định</td>
+                <td>Hà Nội</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn Văn B</td>
+                <td>Thái Bình</td>
+                <td>Hà Nội</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nguyễn Thị A</td>
+                <td>Nam Định</td>
+                <td>Hà Nội</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn Văn B</td>
+                <td>Thái Bình</td>
+                <td>Hà Nội</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nguyễn Thị A</td>
+                <td>Nam Định</td>
+                <td>Hà Nội</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn Văn B</td>
+                <td>Thái Bình</td>
+                <td>Hà Nội</td>
+            </tr>
+        </tbody>
+        
+        <!-- Phần cuối của bảng -->
+        <tfoot>
+            <!-- colspan dùng để gộp các cột -->
+            <!-- rowspan dùng để gộp các hàng -->
+            <tr>
+                <td colspan="2" rowspan="2">Tổng</td>
+                <td colspan="2">Nam: 1</td>
+            </tr>
+            <tr>
+                <td colspan="2">Nữ: 1</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+<style>
+    .head_table {
+        background-color: yellow;
+    }
+
+    tfoot {
+        background-color: yellow;
+    }
+
+    table {
+        /* Định dạng lại khung */
+        /* separate: để mặc định */
+        /* collapse: gộp thành 1 đường kẻ */
+        border-collapse: collapse;
+    }
+
+    /* Chọn các hàng lẻ */
+    tr:nth-child(2n+1) {
+        background-color: pink;
+    }
+    /* Chọn các hàng chẵn */
+    tr:nth-child(2n) {
+        background-color: gold;
+    }
+
+    /* Tùy chỉnh hàng đầu tiên */
+    td:first-child {
+        color: red;
+    }
+    /* Tùy chỉnh hàng cuối */
+    td:last-child {
+        color: blueviolet;
+    }
+</style>
+</html>

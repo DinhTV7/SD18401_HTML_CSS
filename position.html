@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vị trí</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- relative -->
+        <div class="box"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsa recusandae mollitia a, numquam excepturi non
+            amet voluptatum distinctio saepe quas, omnis corporis sint est culpa iusto quaerat, minus nobis.</p>
+        <!-- absolute -->
+        <div class="box21"></div>
+        <div class="box22"></div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, a mollitia molestias nulla obcaecati
+            reprehenderit perferendis provident nostrum enim, ratione autem consequatur in dolorem, dolore sint
+            distinctio debitis! Ducimus, ipsam.</p>
+
+        <!-- fixed -->
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+</body>
+<style>
+    /* Thuộc tính position: Xác định cơ chế định
+        - static: mặc định
+        - relative: di chuyển tương đối và không ảnh hưởng đến các thành phần khác
+        - absolute: di chuyển tuyệt đối (nếu ko có vùng nhận là cha 
+        thì sẽ lấy khung của trang web để di chuyển)
+        - fixed: Giữ nguyên vị trí khi cuộn màn hình
+    */
+    .container {
+        width: 100%;
+        height: 1000px;
+        background-color: black;
+        color: white;
+        /* Khi sử dụng absolute thì bắt buộc phải có 1 thuộc tính position: relative;
+        là cha ( bao quanh nó )
+        */
+        position: relative;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        position: relative;
+        top: 50px;
+        /* left: 50px; */
+        margin: auto;
+    }
+
+    .box21 {
+        width: 120px;
+        height: 120px;
+        background-color: blueviolet;
+        /* position: absolute; */
+        right: 0;
+        display: none;
+    }
+
+    .container:hover > .box21 {
+        display: block;
+    }
+
+    .box22 {
+        width: 100px;
+        height: 100px;
+        background-color: chartreuse;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .box3 {
+        width: 100%;
+        height: 100px;
+        background-color: coral;
+        position: fixed;
+        top: 0;
+    }
+
+    .box4 {
+        width: 50px;
+        height: 50px;
+        background-color: coral;
+        position: fixed;
+        border-radius: 90px;
+        right: 50px;
+        bottom: 50px;
+    }
+
+    /* Thuộc tính hiển thị / ẩn */
+    /* 
+        - block: Hiển thị lên
+        - none: Ẩn đi
+    */
+    .box4:hover {
+        display: none;
+    }
+</style>
+
+</html>
